@@ -35,7 +35,7 @@ if (process.env.PORT) {
     port: 5432,
     username: 'postgres',
     password: 'sNpFXdDbQ]V2H~*f',
-    database: 'mmlfdb',
+    database: 'logforumdb',
     synchronize: true,
     logging: false,
     entities: [

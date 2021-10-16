@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_DB: mmlfdb
+      POSTGRES_DB: logforumdb
       POSTGRES_PASSWORD: sNpFXdDbQ]V2H~*f
     ports:
       - 5432:5432
