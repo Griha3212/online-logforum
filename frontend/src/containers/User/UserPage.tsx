@@ -24,7 +24,7 @@ import getLocalStorageData from '../../utils/helpers/localStorage.helper';
 import parseToken from '../../utils/parseToken';
 import VideoPlayerMain from '../../components/VideoPlayerMain/VideoPlayerMain';
 import SessionInfoBlock from '../../components/SessionInfoBlock/SessionInfoBlock';
-import topMMLFLogo from '../../img/mmlf_logo_2021.svg';
+import topLogforumLogo from '../../img/logforum_top_logo.svg';
 import SpeakersSessionInfoBlock from '../../components/SpeakersSessionInfoBlock/SpeakersSessionInfoBlock';
 import {
   apiGetUser, apiUserUpdateWatchedSpeakers,
@@ -338,8 +338,8 @@ const UserPage: FC = () => {
     if (isXl) return '720px';
     if (isLg) return '720px';
     if (isMd) return '720px';
-    if (isSm) return '300px';
-    if (isXs) return '300px';
+    if (isSm) return '270px';
+    if (isXs) return '270px';
   };
 
   const renderSpeakersSessionInfoBlock = () => {
@@ -423,20 +423,20 @@ const UserPage: FC = () => {
           container
           xl={12}
           justify="space-between"
-          className={`${classes.mainContainer} ${classes.darkBlueBckgTop} ${classes.topPart}`}
+          className={`${classes.mainContainer} ${classes.blackBckgTop} ${classes.topPart}`}
         >
 
           <Grid item className={classes.myAuto} lg={3} xl={3} sm={4}>
             <img
               onClick={() => { window.open('https://mmlf.ru/', '_blank'); }}
-              className={classes.mmlfTopLogoImg}
-              src={topMMLFLogo}
+              className={classes.logforumTopLogoImg}
+              src={topLogforumLogo}
               alt=""
             />
           </Grid>
 
           <Grid item className={classes.myAuto} xl={6} lg={6} sm={4}>
-            <Typography className={classes.conferenceTopText} align="center">Конференция</Typography>
+            <Typography className={classes.conferenceTopText} align="center">Экскурсия</Typography>
           </Grid>
 
           <Grid item className={classes.myAuto} xl={3} lg={3} sm={4}>
@@ -457,20 +457,20 @@ const UserPage: FC = () => {
           container
           xl={12}
           justify="space-between"
-          className={`${classes.mainContainer} ${classes.darkBlueBckgTop} ${classes.topPart}`}
+          className={`${classes.mainContainer} ${classes.blackBckgTop} ${classes.topPart}`}
         >
 
           <Grid item className={classes.myAuto} xs={6}>
             <p style={{ marginBottom: '0px' }}>
               <img
                 onClick={() => { window.open('https://mmlf.ru/', '_blank'); }}
-                className={classes.mmlfTopLogoImg}
-                src={topMMLFLogo}
+                className={classes.logforumTopLogoImg}
+                src={topLogforumLogo}
                 alt=""
               />
 
             </p>
-            <p style={{ marginTop: '5px' }}><Typography className={classes.conferenceTopText} align="center">Конференция</Typography></p>
+            <p style={{ marginTop: '5px' }}><Typography className={classes.conferenceTopText} align="center">Экскурсия</Typography></p>
 
           </Grid>
 

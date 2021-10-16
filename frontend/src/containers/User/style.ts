@@ -595,11 +595,11 @@ const useStyles = makeStyles((theme) => ({
     // background: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);',
 
     [theme.breakpoints.up('xs')]: {
-      height: '300px',
+      height: '270px',
     },
 
     [theme.breakpoints.up('sm')]: {
-      height: '300px',
+      height: '270px',
     },
     [theme.breakpoints.up('md')]: {
       height: '720px',
@@ -989,13 +989,26 @@ const useStyles = makeStyles((theme) => ({
 
   topPart: {
 
-    height: '120px',
+    [theme.breakpoints.up('xs')]: {
+      height: '100px',
+    },
+
+    [theme.breakpoints.up('sm')]: {
+      height: '100px',
+    },
+
+    [theme.breakpoints.up('lg')]: {
+      height: '183px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      height: '183px',
+    },
 
   },
 
   conferenceTopText: {
 
-    fontFamily: 'Gotham Pro Bold',
+    fontFamily: 'Proxima Nova Bold',
     textTransform: 'uppercase',
     color: 'white',
     // marginLeft: '7vw',
@@ -1013,21 +1026,21 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('lg')]: {
-      fontSize: '3.8vw',
+      fontSize: '3.4vw',
       textAlign: 'center',
       // lineHeight: '56px',
     },
     [theme.breakpoints.up('xl')]: {
-      fontSize: '4vw',
+      fontSize: '3.6vw',
       lineHeight: '6vw',
       textAlign: 'center',
     },
 
   },
-  darkBlueBckgTop: {
-    backgroundColor: '#00124D',
+  blackBckgTop: {
+    backgroundColor: '#000000',
   },
-  mmlfTopLogoImg: {
+  logforumTopLogoImg: {
 
     position: 'relative',
     top: '5px',
@@ -1056,10 +1069,8 @@ const useStyles = makeStyles((theme) => ({
 
   loadProgramButton: {
 
-    // borderWidth: '1px',
-    // borderColor: '#707070 !important',
-    borderRadius: '0px',
-    fontFamily: 'Gotham Pro Medium',
+    borderRadius: '5px',
+    fontFamily: 'Proxima Nova Regular',
 
     whiteSpace: 'nowrap',
     backgroundColor: '#FF414A',
@@ -1073,7 +1084,7 @@ const useStyles = makeStyles((theme) => ({
     transition: '0.2s',
 
     '&:hover': {
-      backgroundColor: '#00124D',
+      backgroundColor: '00000',
       border: '1px solid #FF414A',
       color: '#FF414A',
       transition: '0.2s',
@@ -1112,10 +1123,6 @@ const useStyles = makeStyles((theme) => ({
   },
   mainContainer: {
 
-    // marginTop: '20px',
-    borderTop: '1px solid #707070',
-    borderBottom: '1px solid #707070',
-
     [theme.breakpoints.up('xs')]: {
       paddingLeft: '35px',
       paddingRight: '35px',
@@ -1129,13 +1136,13 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('lg')]: {
-      paddingLeft: '120px',
-      paddingRight: '120px',
+      paddingLeft: '200px',
+      paddingRight: '200px',
 
     },
     [theme.breakpoints.up('xl')]: {
-      paddingLeft: '120px',
-      paddingRight: '120px',
+      paddingLeft: '200px',
+      paddingRight: '200px',
     },
 
   },
