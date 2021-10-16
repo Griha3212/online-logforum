@@ -17,7 +17,7 @@ services:
     ports:
       - 5432:5432
   backend:
-    container_name: mmlf_backend
+    container_name: logforum_backend
     build:
       context: .
       dockerfile: ./backend/Dockerfile
@@ -34,7 +34,7 @@ services:
       - db
     command: ["npm", "run", "prod"]
   frontend:
-    container_name: mmlf_frontend
+    container_name: logforum_frontend
     build:
       context: .
       dockerfile: ./frontend/Dockerfile
