@@ -6,7 +6,7 @@ volumes:
 services:
   db:
     image: postgres
-    container_name: mmlf_db
+    container_name: logforum_db
     restart: always
     environment:
       POSTGRES_USER: postgres
