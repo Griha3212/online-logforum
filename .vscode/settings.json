@@ -1,0 +1,10 @@
+{
+  
+  "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": [ "./frontend", "./backend" ],
+  "eslint.validate": ["typescript", "typescriptreact"],
+  "eslint.enable": true,
+  "files.eol": "\n",
+  "liveServer.settings.port": 5501
+	
+}

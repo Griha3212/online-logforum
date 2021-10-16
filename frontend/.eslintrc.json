@@ -1,0 +1,52 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "root": true,
+    "extends": [
+        "airbnb-typescript",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "createDefaultProgram": true,
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "operator-linebreak": "off",
+        "comma-dangle": "error",
+        "semi": "error",
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "react/state-in-constructor": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/destructuring-assignment": "off",
+        "react/prop-types": "off",
+        "no-param-reassign": "off",
+        "no-else-return": "off",
+        "import/no-cycle": "off",
+        "no-console": "warn",
+        "linebreak-style": ["off", "unix"],
+        "import/no-named-as-default": 0,
+        "no-extra-boolean-cast": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "no-mixed-operators": "off",
+        "react/no-array-index-key": "off",
+        "no-lonely-if": "off"
+    }
+}

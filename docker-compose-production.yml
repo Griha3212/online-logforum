@@ -1,0 +1,53 @@
+version: "3.3"
+
+volumes:
+  pg_db:
+
+services:
+  db:
+    image: postgres
+    container_name: mmlf_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: mmlfdb
+      POSTGRES_PASSWORD: sNpFXdDbQ]V2H~*f
+    volumes:
+      - pg_db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+  backend:
+    container_name: mmlf_backend
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    env_file:
+      - ./backend/.env.prod
+    restart: on-failure
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    ports:
+      - 3005:3005
+      - 3011:3011
+    depends_on:
+      - db
+    command: ["npm", "run", "prod"]
+  frontend:
+    container_name: mmlf_frontend
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    environment:
+      NODE_ENV: development
+    env_file:
+      - ./frontend/.env.prod
+    restart: on-failure
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - 8080:8080
+    depends_on:
+      - backend
+    command: ["npm", "run", "start:prod"]

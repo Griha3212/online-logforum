@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="593" height="22.75" viewBox="0 0 593 22.75">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.319" y1="0.405" x2="0.956" y2="0.405" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff414a"/>
+      <stop offset="0.529" stop-color="#90f"/>
+      <stop offset="1" stop-color="#039"/>
+    </linearGradient>
+  </defs>
+  <g id="Слой_x0020_1" transform="translate(-266.238 -50.229)">
+    <path id="Контур_3235" data-name="Контур 3235" d="M1834.99,368.94h593V346.19h-593Z" transform="translate(-1568.752 -295.961)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

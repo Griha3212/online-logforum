@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "build",
+    "esModuleInterop": true,
+    "strict": true,
+    "types": ["reflect-metadata", "node"],
+    "typeRoots": ["./types", "./node_modules/@types", "./node_modules/@jest"]
+  },
+  "exclude": ["node_modules", "*/*.spec.ts", "*/*.test.ts"],
+  "include": ["./src/**/*.tsx", "./src/**/*.ts", "/backend/ormconfig.js"]
+}
