@@ -19,7 +19,7 @@ export const apiGetStats = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };

@@ -20,7 +20,7 @@ export const apiGetUser = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };
@@ -43,7 +43,7 @@ export const apiVoteForSpeaker = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };
@@ -65,7 +65,7 @@ export const apiUserUpdateWatchedSpeakers = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };
@@ -87,7 +87,7 @@ export const apiUserUpdateContactedSpeakers = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };
@@ -108,7 +108,7 @@ export const apiUserTakeAPartInRafflePrizes = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };
@@ -130,7 +130,7 @@ export const apiUserUpdateWatchedSpeakersAllInSession = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };
@@ -152,7 +152,7 @@ export const apiGetAllChannels = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };
@@ -174,7 +174,7 @@ export const apiUserChangeActiveChannel = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };

@@ -20,7 +20,7 @@ export const apiChangeActiveSpeakerInChannel = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };
@@ -42,7 +42,7 @@ export const apiSetBrakeInChannel = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };
@@ -63,7 +63,7 @@ export const apiSetLogistOfTheYearSession = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };
@@ -84,7 +84,7 @@ export const apiDisableLogistOfTheYearSession = async (
       },
     });
     return data;
-  } catch (error) {
+  } catch (error:any) {
     return error.response;
   }
 };

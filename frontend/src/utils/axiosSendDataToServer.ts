@@ -45,14 +45,14 @@ const request = (
         data: ((method === 'POST' || method === 'PUT' || method === 'DELETE') && reqData) || undefined,
       });
       return response.data;
-    } catch (error) {
+    } catch (error:any) {
       if (error.response && error.response.data === 'Unauthorized') {
         let newToken: any;
         try {
           // TO DO update token
           //   newToken = await dispatch(updateToken(token));
           //   headers.Authorization = `Bearer ${newToken.token}`; // добавляем токен в headers запроса
-        } catch (err) {
+        } catch (err:any) {
           // dispatch(authRequest());
           localStorage.clear();
           history.push('/');
