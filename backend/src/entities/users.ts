@@ -58,6 +58,10 @@ export default class Users extends BaseEntity {
   isAdmin: boolean;
 
   @Index()
+  @Column({ default: false })
+  isFreeUser: boolean;
+
+  @Index()
   @Column({ nullable: true })
   adminOfTheChannelNumber: number;
 
