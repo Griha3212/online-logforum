@@ -23,6 +23,7 @@ export const ProtectedRoutes: FC = () => {
 
   const [userData, setUserData] = useState(parseToken(token.accessToken as string));
 
+  if (userData.isFreeUser) return <Redirect to="/free" />;
   if (userData.isAdmin) return <Redirect to="/admin" />;
   if (userData.hasAccessToStatisticPage) return <Redirect to="/stats" />;
   if (!userData.isAdmin) return <Redirect to="/user" />;
