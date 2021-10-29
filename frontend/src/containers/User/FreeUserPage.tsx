@@ -510,8 +510,7 @@ const FreeUserPage: FC = () => {
 
       {/* red bckg */}
       <Grid
-        className={renderSpeakersSessionInfoBlock() ? classes.blackBckgContainer :
-          classes.blackBckgContainerShort}
+        className={classes.blackBckgContainerShort}
         container
         item
         justify="center"

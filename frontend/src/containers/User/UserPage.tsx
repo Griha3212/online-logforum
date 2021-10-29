@@ -435,7 +435,7 @@ const UserPage: FC = () => {
             />
           </Grid>
 
-          <Grid item className={classes.myAuto} xl={6} lg={6} sm={4}>
+          <Grid item className={classes.myAuto} xl={3} lg={3} sm={4}>
             <Typography className={classes.conferenceTopText} align="center">Экскурсия</Typography>
           </Grid>
 
@@ -506,8 +506,7 @@ const UserPage: FC = () => {
 
       {/* red bckg */}
       <Grid
-        className={renderSpeakersSessionInfoBlock() ? classes.blackBckgContainer :
-          classes.blackBckgContainerShort}
+        className={classes.blackBckgContainerShort}
         container
         item
         justify="center"

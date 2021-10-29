@@ -902,11 +902,11 @@ const useStyles = makeStyles((theme) => ({
   },
   innerContainer: {
 
-    paddingLeft: '120px',
-    paddingRight: '120px',
     width: '100%',
     position: 'relative',
     zIndex: 2,
+    maxWidth: '1140px',
+    margin: '0 auto',
 
     [theme.breakpoints.down('md')]: {
       paddingLeft: '64px',
@@ -931,7 +931,7 @@ const useStyles = makeStyles((theme) => ({
   blackBckgContainer: {
 
     backgroundColor: '#000000',
-    height: '319px',
+    height: '458px',
     position: 'absolute',
     zIndex: 1,
 
@@ -947,7 +947,7 @@ const useStyles = makeStyles((theme) => ({
       height: '50.5vw',
     },
     [theme.breakpoints.up('xl')]: {
-      height: '319px',
+      height: '458px',
     },
 
   },
@@ -975,7 +975,7 @@ const useStyles = makeStyles((theme) => ({
       height: '16.5vw',
     },
     [theme.breakpoints.up('xl')]: {
-      height: '319px',
+      height: '458px',
     },
 
   },
@@ -1026,13 +1026,13 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('lg')]: {
-      fontSize: '3.4vw',
+      fontSize: '2vw',
       textAlign: 'center',
       // lineHeight: '56px',
     },
     [theme.breakpoints.up('xl')]: {
-      fontSize: '3.6vw',
-      lineHeight: '6vw',
+      fontSize: '2.2vw',
+      lineHeight: '2.3vw',
       textAlign: 'center',
     },
 

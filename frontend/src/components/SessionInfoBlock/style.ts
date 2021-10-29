@@ -462,14 +462,8 @@ const useStyles = makeStyles((theme) => ({
 
   },
 
-  mainSessionInfoContainer: {
-
-  },
-
   textCenter: {
-
     textAlign: 'center',
-
   },
 
   lightBlueBckg: {
