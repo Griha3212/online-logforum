@@ -1080,39 +1080,7 @@ const FreeUserPage: FC = () => {
               />
 
             </Grid>
-            <Grid xs={12} md={4} xl={3} lg={3} className={classes.myAuto} item>
-              <p className={classes.footerTextDate}>15-19 февраля 2021</p>
-            </Grid>
-            <Grid xs={8} sm={4} md={2} xl={2} lg={2} className={classes.myAuto} item>
-              <Grid container item justify="space-around">
-                <Grid item>
-                  <img
-                    onClick={() => { window.open('https://vk.com/ccl_logistics', '_blank'); }}
-                    className={`${classes.cursorPointer} ${classes.socialFooterImg}`}
-                    src={vk}
-                    alt=""
-                  />
-                </Grid>
-                <Grid item>
-                  <img
-                    onClick={() => { window.open('https://www.facebook.com/logcouncil/', '_blank'); }}
-                    className={`${classes.cursorPointer} ${classes.socialFooterImg}`}
-                    src={facebook}
-                    alt=""
-                  />
-                </Grid>
-                <Grid item>
-                  <img
-                    onClick={() => { window.open('https://www.youtube.com/channel/UCtWoEZ_O5QBtBQHg4Z5OM2A', '_blank'); }}
-                    className={`${classes.cursorPointer} ${classes.socialFooterImg}`}
-                    src={youtube}
-                    alt=""
-                  />
-                </Grid>
 
-              </Grid>
-
-            </Grid>
             <Grid xs={12} md={3} xl={2} lg={2} className={`${classes.myAuto} ${classes.footerLogoAndPhone}`} item>
               <p>
                 <img
