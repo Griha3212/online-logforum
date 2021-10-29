@@ -219,7 +219,7 @@ const SessionInfoBlock = (props: any) => {
     <>
       {currentUserData && currentUserData.channelUserInfo.activeSession &&
         currentUserData.channelUserInfo.activeSession.isSessionForSecondDay ? null : (
-          <Grid item container className={classes.darkBlueBckg}>
+          <Grid item container className={classes.innerWhiteContainer}>
             <Grid item container xs={12} xl={9} lg={9} md={9}>
               <Grid item container xs className={classes.heightFitContent}>
                 <Grid item xs>

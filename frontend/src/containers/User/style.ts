@@ -928,10 +928,10 @@ const useStyles = makeStyles((theme) => ({
 
   },
 
-  redBckgContainer: {
+  blackBckgContainer: {
 
-    backgroundColor: '#FF414A',
-    height: '1034px',
+    backgroundColor: '#000000',
+    height: '319px',
     position: 'absolute',
     zIndex: 1,
 
@@ -947,14 +947,14 @@ const useStyles = makeStyles((theme) => ({
       height: '50.5vw',
     },
     [theme.breakpoints.up('xl')]: {
-      height: '694px',
+      height: '319px',
     },
 
   },
 
-  redBckgContainerShort: {
+  blackBckgContainerShort: {
 
-    backgroundColor: '#FF414A',
+    backgroundColor: '#000000',
 
     position: 'absolute',
     zIndex: 1,
@@ -975,7 +975,7 @@ const useStyles = makeStyles((theme) => ({
       height: '16.5vw',
     },
     [theme.breakpoints.up('xl')]: {
-      height: '250px',
+      height: '319px',
     },
 
   },
@@ -1067,60 +1067,6 @@ const useStyles = makeStyles((theme) => ({
 
   },
 
-  loadProgramButton: {
-
-    borderRadius: '5px',
-    fontFamily: 'Proxima Nova Regular',
-
-    whiteSpace: 'nowrap',
-    backgroundColor: '#FF414A',
-    color: 'white',
-    border: 'none',
-
-    // textTransform: 'capitalize',
-    textTransform: 'initial',
-    // marginLeft: '6vw',
-    marginTop: '6px',
-    transition: '0.2s',
-
-    '&:hover': {
-      backgroundColor: '00000',
-      border: '1px solid #FF414A',
-      color: '#FF414A',
-      transition: '0.2s',
-    },
-
-    [theme.breakpoints.up('xs')]: {
-      width: '29vw',
-      height: '5.5vw',
-      fontSize: '2.1vw',
-      left: '11vw',
-    },
-
-    [theme.breakpoints.up('sm')]: {
-      width: '18vw',
-      height: '95%',
-      fontSize: '1.5vw',
-      marginTop: '0px',
-      left: '11vw',
-    },
-
-    [theme.breakpoints.up('lg')]: {
-      width: '16.4vw',
-      height: '3vw',
-      fontSize: '1.1vw',
-      lineHeight: '16px',
-      left: '0px',
-    },
-    [theme.breakpoints.up('xl')]: {
-      width: '340px',
-      height: '60px',
-      fontSize: '24px',
-      lineHeight: '27px',
-      left: '0px',
-    },
-
-  },
   mainContainer: {
 
     [theme.breakpoints.up('xs')]: {

@@ -505,9 +505,9 @@ const useStyles = makeStyles((theme) => ({
 
   },
 
-  darkBlueBckg: {
+  innerWhiteContainer: {
 
-    backgroundColor: '#00124D',
+    backgroundColor: '#F1F3F5',
     height: 'auto',
 
     width: '100%',
