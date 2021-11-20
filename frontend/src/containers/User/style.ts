@@ -905,7 +905,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     position: 'relative',
     zIndex: 2,
-    maxWidth: '1140px',
+    maxWidth: '1520px',
     margin: '0 auto',
 
     [theme.breakpoints.down('md')]: {

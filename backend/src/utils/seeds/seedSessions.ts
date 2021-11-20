@@ -18,7 +18,7 @@ export const seedMockedSessions = async () => {
     {
 
       name: 'Plenar',
-      letter: 'Пленарная сессия',
+      letter: 'Экскурсия',
       description: 'Развитие логистики и управления цепями поставок в России и мире',
       channelForShowing: await foundChannels.filter((channel: any) => channel.number === 1),
       nextSessionLetter: 'WMS DAY-1',

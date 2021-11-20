@@ -360,28 +360,6 @@ const UserPage: FC = () => {
       dataForUser.channelUserInfo.activeSession.nextSessionName === 'LogistOfTheYear') {
       return null;
     }
-
-    // if LogistOfTheYear, don't show block
-    if (dataForUser && dataForUser.channelUserInfo.activeSession
-      && dataForUser.channelUserInfo.activeSession.name === 'LogistOfTheYear') {
-      return null;
-    } else {
-      return (
-        <Grid item className={classes.innerContainer}>
-
-          <SpeakersSessionInfoBlock
-            currentModeratorInfo={activeModeratorInfo}
-            currentSessionSpeakersInfo={activeSessionSpeakersInfo}
-            currentSessionSpeakersAllRates={activeSessionSpeakersAllRates}
-            currentUserData={dataForUser}
-            token={token}
-            userId={user.id}
-            key={activeSessionSpeakersAllRates}
-          />
-
-        </Grid>
-      );
-    }
   };
 
   const renderOtherSessions = (channel: any) => {
@@ -561,7 +539,13 @@ const UserPage: FC = () => {
 
         <Grid item className={classes.innerContainer}>
           <Grid xs={12} item container className={classes.mainContainerBckgChangeSession}>
-            <p className={`${classes.speakersBlockHeader} ${classes.partnersHeader}`}>Партнеры Форума</p>
+            <p className={`${classes.speakersBlockHeader} ${classes.partnersHeader}`}>
+              Выражаем
+              {' '}
+              <span>благодарность</span>
+              {' '}
+              партнерам форума
+            </p>
           </Grid>
 
           <Grid justify="space-between" container item className={`${classes.mainContainerBckgChangeSession} ${classes.partnersContainerImg}`}>

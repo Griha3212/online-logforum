@@ -10,7 +10,7 @@ export const seedMockedChannels = async () => {
   const channelsToSeed = [{
     number: 1,
     link: 'https://facecast.net/v/dbf35c',
-    startChannelSessionLetter: 'Пленарная сессия',
+    startChannelSessionLetter: 'Экскурсия',
     startChannelSessionDescription: 'Развитие логистики и управления цепями поставок в России и мире',
     channelLocation: 'Полусфера',
     nextSessionName: 'Plenar',

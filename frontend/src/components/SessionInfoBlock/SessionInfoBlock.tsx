@@ -123,7 +123,7 @@ const SessionInfoBlock = (props: any) => {
       if (!currentUserData.channelUserInfo.activeSession && currentUserData.channelUserInfo.break) {
         if (currentUserData.channelUserInfo.number === 1 &&
           !currentUserData.channelUserInfo.started) {
-          return `Перерыв... Скоро здесь начнётся сессия: ${currentUserData.channelUserInfo.startChannelSessionDescription}`;
+          return `Перерыв... Скоро здесь начнётся: ${currentUserData.channelUserInfo.startChannelSessionDescription}`;
         }
 
         if (currentUserData.channelUserInfo.number === 1 &&
@@ -131,14 +131,14 @@ const SessionInfoBlock = (props: any) => {
           return 'Вступительное слово Оргкомитета Форума';
         }
 
-        return `Перерыв... Скоро здесь начнётся сессия: ${currentUserData.channelUserInfo.startChannelSessionDescription}`;
+        return `Перерыв... Скоро здесь начнётся: ${currentUserData.channelUserInfo.startChannelSessionDescription}`;
       }
 
       if (currentUserData.channelUserInfo.activeSession && currentUserData.channelUserInfo.break) {
         if (currentUserData.channelUserInfo.activeSession.name === 'LogistOfTheYear') {
           return '19 февраля здесь будут проходить Онлайн-экскурсии на крупнейшие логистические объекты';
         }
-        return `Перерыв... Скоро здесь начнётся сессия: ${currentUserData.channelUserInfo.activeSession.nextSessionDescription}`;
+        return `Перерыв... Скоро здесь начнётся: ${currentUserData.channelUserInfo.activeSession.nextSessionDescription}`;
       }
 
       if (props.currentSessionDescription) {
@@ -217,8 +217,8 @@ const SessionInfoBlock = (props: any) => {
 
   return (
     <>
-      {currentUserData && currentUserData.channelUserInfo.activeSession &&
-        currentUserData.channelUserInfo.activeSession.isSessionForSecondDay ? null : (
+      {currentUserData &&
+        currentUserData.channelUserInfo.activeSpeaker ? null : (
           <Grid item container className={classes.innerWhiteContainer}>
             <Grid item container xs={12} xl={9} lg={9} md={9}>
               <Grid item container xs className={classes.heightFitContent}>
@@ -273,14 +273,14 @@ const SessionInfoBlock = (props: any) => {
         )}
 
       {showSecondBlock() ? (
-        <Grid item container justify="space-between" className={classes.lightBlueBckg}>
+        <Grid item container justify="space-between" className={classes.innerBlack}>
 
-          <Grid container item className={classes.speakerInfoBlock} sm={7} xl={8} lg={8} xs={12}>
+          <Grid container item className={classes.speakerInfoBlock} sm={7} xl={6} lg={8} xs={12}>
             {currentUserData &&
               currentUserData.channelUserInfo.activeSession.isSessionForSecondDay ? null : (
                 <Grid item xl={12} lg={12} sm={12} xs={12}>
                   <p className={classes.speakerThemeWord}>
-                    Доклад:
+                    Экскурсия
                   </p>
                 </Grid>
               )}
@@ -304,11 +304,11 @@ const SessionInfoBlock = (props: any) => {
             <Grid container spacing={5}>
 
               <Grid item xs={4} sm={4} xl={2} lg={2}>
-                <img className={classes.speakerAvatarImg} width="100%" src={currentSpeakerInfo && currentSpeakerInfo.linkToImg || noAvatar} alt="" />
-
+                <div className={classes.speakerAvatarBlock}>
+                  <img className={classes.speakerAvatarImg} width="100%" src={currentSpeakerInfo && currentSpeakerInfo.linkToImg || noAvatar} alt="" />
+                </div>
               </Grid>
               <Grid className={`${classes.noLeftPadding} ${classes.myAuto}`} item xs={8} sm={7} xl={8} lg={8}>
-                <p className={classes.speakerHeaderText}>Спикер</p>
                 <p className={classes.speakerFullNameText}>
                   {`${currentSpeakerInfo
                     && currentSpeakerInfo.firstName || 'Имя'} ${currentSpeakerInfo
@@ -325,13 +325,12 @@ const SessionInfoBlock = (props: any) => {
 
           </Grid>
 
-          <Grid item xs={12} sm={5} md={4} lg={3} xl={3}>
+          <Grid item xs={12} sm={5} md={4} lg={3} xl={6}>
 
             <div className={classes.textCenter}>
               <Box component="fieldset" mb={1} borderColor="transparent">
                 <Typography className={classes.rateSpeakerText} component="legend">
-                  {currentUserData && currentUserData.channelUserInfo.activeSession &&
-                    currentUserData.channelUserInfo.activeSession.isSessionForSecondDay ? 'Оцените экскурсию' : 'Оцените выступление'}
+                  Оцените экскурсию
                 </Typography>
                 <Rating
                   classes={{ iconEmpty: 'rateBigDefault' }}
@@ -346,107 +345,6 @@ const SessionInfoBlock = (props: any) => {
                 />
               </Box>
             </div>
-            {currentSpeakerInfo && currentSpeakerInfo.linkToPresentation ? (
-              <p className={classes.textCenter}>
-                <Button
-                  // disabled={presentationAccessClosed}
-                  onClick={(e) => {
-                    if (presentationAccessClosed) {
-                      return handleClick(e);
-                    } else {
-                      return window.open(`${currentSpeakerInfo && currentSpeakerInfo.linkToPresentation}`, '_blank');
-                    }
-                  }}
-                  className={classes.loadPresenationButton}
-                >
-                  Скачать презентацию
-                </Button>
-
-                <Popover
-                  id={id}
-                  open={open}
-                  anchorEl={anchorEl}
-                  onClose={handleClose}
-                  anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'center',
-                  }}
-                  transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'center',
-                  }}
-                >
-                  <p className={classes.popoverText}>
-                    Пожалуйста, оцените выступление,
-                    чтобы скачать презентацию
-                  </p>
-                </Popover>
-              </p>
-            ) : null}
-
-            {
-              currentSpeakerInfo && currentSpeakerInfo.linkToZoom ? (
-                <p className={classes.textCenter}>
-                  <Button
-                    // disabled={closedAccess}
-                    onClick={() => window.open(`${currentSpeakerInfo && currentSpeakerInfo.linkToZoom}`, '_blank')}
-                    className={classes.goToZoomButton}
-                  >
-                    Перейти в Zoom
-
-                  </Button>
-                </p>
-              ) : null
-            }
-
-            {
-              currentSpeakerInfo && currentSpeakerInfo.hasSendContactsButton ? (
-                <p className={classes.textCenter}>
-                  <Button
-                    // disabled={closedAccess}
-                    onClick={() => sendContacts()}
-                    className={checkAlreadySentContact()
-                      ? classes.sendContactsButtonSuccess : classes.sendContactsButton}
-                  >
-                    {checkAlreadySentContact() ?
-
-                      (
-                        <span>
-                          <img alt="check" src={check} />
-                          {' '}
-                          Контакты отправлены
-                        </span>
-                      ) : 'Поделиться контактами'}
-
-                  </Button>
-                </p>
-              ) : null
-            }
-            {
-              currentSpeakerInfo && currentSpeakerInfo.hasRafflePrizesButton ? (
-                <p className={classes.textCenter}>
-                  <Button
-                    // disabled={closedAccess}
-                    onClick={() => takeAPartInRafflePrizes()}
-                    className={checkAlreadyTookPart()
-                      ? classes.takeAPartInRafflePrizesButtonSuccess :
-                      classes.takeAPartInRafflePrizesButton}
-                  >
-                    {checkAlreadyTookPart() ?
-
-                      (
-                        <span>
-                          <img alt="check" src={check} />
-                          {' '}
-                          Готово
-                        </span>
-                      ) : 'Участвовать в розыгрыше'}
-
-                  </Button>
-                </p>
-              ) : null
-            }
-
           </Grid>
 
         </Grid>

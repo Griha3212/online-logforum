@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('xl')]: {
-      paddingLeft: '10px !important',
+      paddingLeft: '71px !important',
       paddingBottom: '20px',
 
     },
@@ -106,7 +106,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     [theme.breakpoints.up('xl')]: {
-      fontSize: '2.5rem',
+      fontSize: '28px',
     },
 
   },
@@ -120,10 +120,17 @@ const useStyles = makeStyles((theme) => ({
 
   },
 
-  speakerAvatarImg: {
+  svg: {
 
-    borderRadius: '50%',
-    border: '4px solid white',
+  },
+
+  speakerAvatarImg: {
+    zIndex: 2,
+
+    // borderRadius: '50%',
+    // borderRight: '2px solid #FF414A',
+    // borderTopRightRadius: '50%',
+    // borderWidth: '1px 2px 3px 4px',
 
     [theme.breakpoints.up('sm')]: {
       maxWidth: '20vw',
@@ -140,8 +147,27 @@ const useStyles = makeStyles((theme) => ({
 
     },
     [theme.breakpoints.up('xl')]: {
-      width: '100%',
+      width: '102px',
     },
+
+  },
+
+  speakerAvatarBlock: {
+    position: 'relative',
+    display: 'flex',
+
+    [theme.breakpoints.up('xl')]: {
+      width: '100px',
+      height: '100px',
+      marginLeft: '33px',
+    },
+  },
+
+  innerSpeakerAvatarBlock: {
+    backgroundColor: 'black',
+    borderRadius: '50%',
+    width: '103px',
+    height: '103px',
 
   },
 
@@ -466,9 +492,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
 
-  lightBlueBckg: {
+  innerBlack: {
 
-    backgroundColor: '#1B3074',
+    backgroundColor: 'transparent',
     width: '100%',
 
     [theme.breakpoints.up('xs')]: {
@@ -493,8 +519,8 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('xl')]: {
       padding: '0 110px',
-      paddingTop: '41px',
-      paddingBottom: '41px',
+      paddingTop: '36px',
+      paddingBottom: '93px',
     },
 
   },
@@ -666,7 +692,7 @@ const useStyles = makeStyles((theme) => ({
   redLeftLine: {
 
     [theme.breakpoints.up('xs')]: {
-      marginRight: '18px',
+      marginRight: '15px',
       width: '7px',
       height: '21px',
       backgroundColor: '#FF414A',
@@ -677,7 +703,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('lg')]: {
-      marginRight: '18px',
+      marginRight: '15px',
       width: '11px',
       height: '33px',
       backgroundColor: '#FF414A',
@@ -688,7 +714,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('xl')]: {
-      marginRight: '18px',
+      marginRight: '15px',
       width: '18px',
       height: '52px',
       backgroundColor: '#FF414A',
@@ -702,8 +728,7 @@ const useStyles = makeStyles((theme) => ({
 
   speakerThemeWord: {
 
-    fontFamily: 'Open Sans',
-    fontWeight: 300,
+    fontFamily: 'Proxima Nova Bold',
 
     color: 'white',
     marginTop: '0px',
@@ -737,8 +762,8 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('xl')]: {
       fontSize: '24px',
-      lineHeight: '33px',
-      marginBottom: '21px',
+      lineHeight: '32px',
+      marginBottom: '22px',
 
     },
 
@@ -746,8 +771,7 @@ const useStyles = makeStyles((theme) => ({
 
   speakerTheme: {
 
-    fontFamily: 'Gotham Pro Light',
-    fontWeight: 400,
+    fontFamily: 'Proxima Nova Bold',
 
     color: 'white',
     marginTop: '0px',
@@ -755,34 +779,34 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('xs')]: {
       fontSize: '4.5vw',
       lineHeight: '5.8vw',
-      marginBottom: '50px',
+      marginBottom: '25px',
 
     },
 
     [theme.breakpoints.up('sm')]: {
       fontSize: '2.4vw',
       lineHeight: '3.5vw',
-      marginBottom: '50px',
+      marginBottom: '25px',
 
     },
 
     [theme.breakpoints.up('md')]: {
       fontSize: '1.8vw',
       lineHeight: '2.4vw',
-      marginBottom: '50px',
+      marginBottom: '25px',
 
     },
 
     [theme.breakpoints.up('lg')]: {
       fontSize: '1.4vw',
       lineHeight: '1.9vw',
-      marginBottom: '50px',
+      marginBottom: '25px',
 
     },
     [theme.breakpoints.up('xl')]: {
       fontSize: '29px',
       lineHeight: '40px',
-      marginBottom: '105px',
+      marginBottom: '88px',
 
     },
 
@@ -854,8 +878,7 @@ const useStyles = makeStyles((theme) => ({
 
   rateSpeakerText: {
 
-    fontFamily: 'Open Sans',
-    fontWeight: 300,
+    fontFamily: 'Proxima Nova Light',
 
     color: 'white',
     marginTop: '0px',
@@ -888,9 +911,10 @@ const useStyles = makeStyles((theme) => ({
 
     },
     [theme.breakpoints.up('xl')]: {
-      fontSize: '24px',
-      lineHeight: '33px',
-      marginBottom: '11px',
+      fontSize: '17px',
+      lineHeight: '22px',
+      marginBottom: '9px',
+      paddingTop: '36px',
     },
 
   },
