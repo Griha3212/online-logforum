@@ -178,15 +178,3 @@ export const apiUserChangeActiveChannel = async (
     return error.response;
   }
 };
-
-export const apiCreateNewFreeUser = async (
-): Promise<any> => {
-  const url = `${process.env.REACT_APP_API_URL}${api.createNewFreeUser}`;
-
-  try {
-    const { data } = await axios.post(url);
-    return data;
-  } catch (error:any) {
-    return error.response;
-  }
-};

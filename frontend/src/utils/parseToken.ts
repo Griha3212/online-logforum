@@ -15,7 +15,6 @@ type JsonPayload = {
   jwtTokenValidUntilDate: Date | null;
   lastName: string;
   showOtherChannelsBlock: boolean;
-  isFreeUser: boolean;
 };
 
 export const parseToken = (token: string): JsonPayload => {

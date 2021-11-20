@@ -29,8 +29,6 @@ const api = {
 
   userTakeAPartInRafflePrizes: 'api/user/take_a_part_in_raffle_prizes',
 
-  createNewFreeUser: 'api/user/create_new_free_user',
-
 };
 
 export default api;

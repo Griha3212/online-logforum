@@ -14,7 +14,6 @@ import { ProtectedRoutes } from './containers/ProtectedRoutes/ProtectedRoutes';
 import AdminPage from './containers/Admin/AdminPage';
 import UserPage from './containers/User/UserPage';
 import StatsPage from './containers/Stats/StatsPage';
-import FreeUserPage from './containers/User/FreeUserPage';
 
 export const App: FC = () => (
 
@@ -27,7 +26,6 @@ export const App: FC = () => (
       <Route path="/admin" component={AdminPage} />
       <Route path="/user" component={UserPage} />
       <Route path="/stats" component={StatsPage} />
-      <Route path="/free" component={FreeUserPage} />
 
       <Route path="/" component={ProtectedRoutes} />
     </Switch>
