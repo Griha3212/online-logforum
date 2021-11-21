@@ -32,7 +32,7 @@ import {
   apiGetAllChannels, apiUserChangeActiveChannel,
   apiUserUpdateWatchedSpeakersAllInSession,
 } from '../../api/user';
-import footerMMLFLogo from '../../img/footer_mmlf_logo.svg';
+import footerCCLLogo from '../../img/ccl_logo.svg';
 import vk from '../../img/socialImg/vk.svg';
 import facebook from '../../img/socialImg/facebook.svg';
 import youtube from '../../img/socialImg/youtube.svg';
@@ -677,25 +677,24 @@ const UserPage: FC = () => {
             <Grid xs={12} md={3} xl={3} lg={3} className={`${classes.myAuto} ${classes.footerLogoContainer}`} item>
               <img
                 onClick={() => { window.open('https://mmlf.ru/', '_blank'); }}
-                className={`${classes.cursorPointer} ${classes.mmlfFooterLogo}`}
-                src={footerMMLFLogo}
+                className={`${classes.cursorPointer} ${classes.logforumFooterLogo}`}
+                src={topLogforumLogo}
                 alt=""
               />
 
             </Grid>
 
             <Grid xs={12} md={3} xl={2} lg={2} className={`${classes.myAuto} ${classes.footerLogoAndPhone}`} item>
+              <p className={classes.footerOrganizatorText}>Организатор</p>
               <p>
                 <img
                   onClick={() => { window.open('https://ccl-logistics.ru/', '_blank'); }}
                   className={classes.cursorPointer}
-                  src={cclFooter}
+                  src={footerCCLLogo}
                   alt=""
                 />
 
               </p>
-              <p><a className={classes.bottomLink} href="tel:+7 (495) 763-91-95">+7 (495) 763-91-95</a></p>
-
             </Grid>
           </Grid>
 

@@ -349,8 +349,14 @@ const useStyles = makeStyles((theme) => ({
 
   },
 
-  socialFooterImg: {
+  footerOrganizatorText: {
+    fontFamily: 'Proxima Nova Thin',
+    fontSize: '10px',
+    color: 'white',
+    textAlign: 'left',
+  },
 
+  socialFooterImg: {
     [theme.breakpoints.up('lg')]: {
       fontSize: '1.2vw',
     },
@@ -425,7 +431,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up('lg')]: {
       marginTop: '100px',
-      height: '220px',
+      height: '170px',
     },
 
   },
@@ -716,7 +722,7 @@ const useStyles = makeStyles((theme) => ({
 
   },
 
-  mmlfFooterLogo: {
+  logforumFooterLogo: {
 
     [theme.breakpoints.up('lg')]: {
       width: '11.5vw',
