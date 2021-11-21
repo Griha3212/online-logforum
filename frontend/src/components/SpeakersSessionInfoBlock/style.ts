@@ -557,8 +557,6 @@ const useStyles = makeStyles((theme) => ({
   speakersBlockHeader: {
 
     fontFamily: 'Gotham Pro Black',
-
-    textTransform: 'uppercase',
     color: '#00124D',
 
     [theme.breakpoints.up('xs')]: {
@@ -626,7 +624,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     [theme.breakpoints.up('xl')]: {
-      padding: '0 110px',
+      padding: '0 196px',
       paddingTop: '107px',
       paddingBottom: '91px',
       marginTop: '105px',

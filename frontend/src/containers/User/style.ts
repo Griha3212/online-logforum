@@ -5,12 +5,12 @@ const useStyles = makeStyles((theme) => ({
 
   partnerImgContainer: {
 
-    boxShadow: '0 0 10px 5px rgb(221 221 221)',
     textAlign: 'center',
+    marginLeft: '0px',
+    paddingTop: '0px',
 
     [theme.breakpoints.up('xs')]: {
       textAlign: 'center',
-      marginBottom: '20px !important',
       paddingTop: '25px',
       marginTop: '0px',
     },
@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '0px !important',
       maxWidth: '28%',
       flexBasis: '28%',
-      marginLeft: '20px',
     },
 
     [theme.breakpoints.up('md')]: {
@@ -32,20 +31,17 @@ const useStyles = makeStyles((theme) => ({
       padding: '0px 0px',
       maxWidth: '30%',
       flexBasis: '30%',
-      marginLeft: '20px !important',
       marginTop: 'auto !important',
     },
 
     [theme.breakpoints.up('lg')]: {
       maxWidth: '30%',
       flexBasis: '30%',
-      height: '22vw',
       paddingTop: '5%',
     },
 
     [theme.breakpoints.up('xl')]: {
-      height: '22vw',
-      padding: '100px 0px',
+      padding: '0px',
       maxWidth: '30%',
       flexBasis: '30%',
     },
@@ -74,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('xl')]: {
 
       height: '100px',
-      marginBottom: '105px',
+      marginBottom: '107px',
     },
 
   },
@@ -119,8 +115,6 @@ const useStyles = makeStyles((theme) => ({
 
   imgPartner: {
 
-    margin: '0 auto',
-
     [theme.breakpoints.down('xs')]: {
       marginBottom: '73px',
       width: '75% !important',
@@ -150,7 +144,8 @@ const useStyles = makeStyles((theme) => ({
 
   partnerText: {
 
-    fontFamily: 'Gotham Pro',
+    fontFamily: 'Proxima Nova Black',
+    textAlign: 'left',
 
     [theme.breakpoints.down('xs')]: {
       fontSize: '5vw',
@@ -165,18 +160,22 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('lg')]: {
-      marginBottom: '20px',
+      // marginBottom: '20px',
     },
 
     [theme.breakpoints.up('xl')]: {
 
       fontSize: '24px',
-      marginBottom: '0px',
+      lineHeight: '41px',
+      marginBottom: '16px',
+      marginTop: '0px',
     },
 
   },
 
   partnersContainerImg: {
+
+    gap: '86px',
 
     [theme.breakpoints.up('xs')]: {
       justifyContent: 'center',
@@ -201,26 +200,26 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up('xs')]: {
       justifyContent: 'center',
-      marginTop: '15px !important',
+
     },
 
     [theme.breakpoints.up('sm')]: {
       justifyContent: 'center',
-      marginTop: '30px !important',
+
     },
 
     [theme.breakpoints.up('md')]: {
       justifyContent: 'center',
-      marginTop: '30px !important',
+
     },
 
     [theme.breakpoints.up('lg')]: {
       justifyContent: 'space-between',
-      marginTop: '30px !important',
+
     },
 
     [theme.breakpoints.up('xl')]: {
-      marginTop: '50px !important',
+
     },
 
   },
@@ -412,8 +411,7 @@ const useStyles = makeStyles((theme) => ({
 
   footerContainer: {
 
-    backgroundColor: '#00124D',
-    borderTop: '33px solid #FF414A',
+    backgroundColor: '#00143D',
 
     [theme.breakpoints.up('xs')]: {
       marginTop: '25px',
@@ -760,7 +758,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('lg')]: {
-      padding: '0 110px',
+      padding: '0 196px',
     },
 
   },
@@ -791,7 +789,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('xl')]: {
 
-      marginTop: '150px',
+      marginTop: '0',
       marginBottom: '25px',
 
     },
@@ -805,7 +803,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('md')]: {
       padding: '0px 33px',
-      marginTop: '40px',
+      marginTop: '0',
       textAlign: 'left',
       marginBottom: '60px',
 
@@ -813,14 +811,14 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('sm')]: {
       padding: '0px',
-      marginTop: '35px',
+      marginTop: '0',
       textAlign: 'center',
       marginBottom: '47px',
     },
 
     [theme.breakpoints.down('xs')]: {
       padding: '0px',
-      marginTop: '55px',
+      marginTop: '0',
       textAlign: 'center',
       marginBottom: '22px',
     },
@@ -829,11 +827,10 @@ const useStyles = makeStyles((theme) => ({
 
   speakersBlockHeader: {
 
-    fontFamily: 'Gotham Pro Black',
+    fontFamily: 'Proxima Nova Black',
     fontSize: '70px',
 
-    textTransform: 'uppercase',
-    color: '#00124D',
+    color: '#000000',
 
     [theme.breakpoints.up('xs')]: {
       fontSize: '6.7vw',
@@ -865,12 +862,25 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('xl')]: {
-      fontSize: '70px',
-      lineHeight: '79px',
+      fontSize: '78px',
+      lineHeight: '72px',
       marginTop: '0px',
       marginLeft: '0px',
     },
+  },
 
+  thanksText: {
+    color: '#FF414A',
+  },
+
+  thanksTextSmall: {
+    fontFamily: 'Proxima Nova Regular',
+    maxWidth: '915px',
+
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '24px',
+      lineHeight: '32px',
+    },
   },
 
   changeSessionMainContainer: {
@@ -950,6 +960,20 @@ const useStyles = makeStyles((theme) => ({
       height: '458px',
     },
 
+  },
+
+  arrow: {
+    position: 'absolute',
+    width: '120px',
+    height: '110px',
+    top: '400px',
+    left: '201px',
+  },
+
+  arrowImage: {
+    position: 'absolute',
+    width: '120px',
+    height: '110px',
   },
 
   blackBckgContainerShort: {

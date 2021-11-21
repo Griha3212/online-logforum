@@ -25,6 +25,7 @@ import parseToken from '../../utils/parseToken';
 import VideoPlayerMain from '../../components/VideoPlayerMain/VideoPlayerMain';
 import SessionInfoBlock from '../../components/SessionInfoBlock/SessionInfoBlock';
 import topLogforumLogo from '../../img/logforum_top_logo.svg';
+import arrowImage from '../../img/arrow.svg';
 import SpeakersSessionInfoBlock from '../../components/SpeakersSessionInfoBlock/SpeakersSessionInfoBlock';
 import {
   apiGetUser, apiUserUpdateWatchedSpeakers,
@@ -482,13 +483,17 @@ const UserPage: FC = () => {
         <img className={classes.greyDecoratedLine} src={greyDecoratedLine} alt="" />
       </Grid> */}
 
-      {/* red bckg */}
+      {/* black bckg */}
       <Grid
         className={classes.blackBckgContainerShort}
         container
         item
         justify="center"
-      />
+      >
+        <div className={classes.arrow}>
+          <img className={classes.arrowImage} src={arrowImage} alt="" />
+        </div>
+      </Grid>
 
       {/* first block (active speaker) info ---------------------------*/}
       <Grid item className={classes.innerContainer}>
@@ -542,13 +547,18 @@ const UserPage: FC = () => {
             <p className={`${classes.speakersBlockHeader} ${classes.partnersHeader}`}>
               Выражаем
               {' '}
-              <span>благодарность</span>
+              <span className={classes.thanksText}>благодарность</span>
               {' '}
               партнерам форума
             </p>
+
+            <p className={classes.thanksTextSmall}>
+              За активное участие в работе
+              над концепцией мероприятия и формировании деловой программы.
+            </p>
           </Grid>
 
-          <Grid justify="space-between" container item className={`${classes.mainContainerBckgChangeSession} ${classes.partnersContainerImg}`}>
+          <Grid justify="flex-start" container item className={`${classes.mainContainerBckgChangeSession} ${classes.partnersContainerImg}`}>
 
             <Grid
               className={`${classes.myAuto} ${classes.partnerImgContainer}`}
@@ -559,16 +569,17 @@ const UserPage: FC = () => {
               xl={4}
               lg={4}
             >
-              <p className={classes.imgPartnerP}>
-                {' '}
-                <img className={`${classes.imgFluid} ${classes.imgPartner}`} src={sap} alt="" />
-              </p>
 
               <p className={classes.partnerText}>
                 Генеральный
                 партнер
               </p>
 
+              <p className={classes.imgPartnerP}>
+                {' '}
+                <img className={`${classes.imgFluid} ${classes.imgPartner}`} src={sap} alt="" />
+              </p>
+
             </Grid>
 
             <Grid
@@ -580,32 +591,16 @@ const UserPage: FC = () => {
               xl={4}
               lg={4}
             >
+
+              <p className={classes.partnerText}>
+                Эксклюзивный
+                партнер
+              </p>
 
               <p className={classes.imgPartnerP}>
                 {' '}
                 <img className={`${classes.imgFluid} ${classes.imgPartner}`} src={comitas} alt="" />
               </p>
-              <p className={classes.partnerText}>
-                Эксклюзивный
-                партнер
-              </p>
-            </Grid>
-
-            <Grid
-              className={`${classes.myAuto} ${classes.partnerImgContainer}`}
-              item
-              xs={10}
-              sm={4}
-              md={3}
-              xl={4}
-              lg={4}
-            >
-
-              <p className={classes.imgPartnerP}>
-                {' '}
-                <img className={`${classes.imgFluid} ${classes.imgPartner}`} src={smartLogistics} alt="" />
-              </p>
-              <p className={classes.partnerText}>IT-партнер</p>
 
             </Grid>
           </Grid>
@@ -665,377 +660,6 @@ const UserPage: FC = () => {
             <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
               <img className={`${classes.imgFluid}`} src={medPoint} alt="" />
             </Grid>
-
-          </Grid>
-
-        </Grid>
-
-      </Grid>
-
-      {/* infoPartners */}
-      <Grid container className={classes.infoPartnersContainer} justify="space-around">
-        <Grid item className={classes.innerContainer}>
-          <Grid xs={12} item container className={classes.mainContainerBckgChangeSession}>
-            <p className={`${classes.speakersBlockHeader} ${classes.infoPartnersHeader}`}>Информационная поддержка</p>
-          </Grid>
-          <Grid
-            justify="space-between"
-            container
-            direction="row"
-            item
-            className={`${classes.mainContainerBckgChangeSession} ${classes.partnersContainerImg3}`}
-          >
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/pro.svg"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/%D0%9B%D0%BE%D0%B3%D0%B8%D1%80%D1%83%D1%81.png"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/%D0%9B%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BC%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B8%CC%86.jpg"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/30_logo_color.png"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/%D0%9B%D0%9E%D0%93%D0%9E_%D0%A1%D0%9E%D0%92%D0%95%D0%A2.jpeg?ver=2"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/seanews.png"
-                alt=""
-              />
-            </Grid>
-            <Hidden xsDown>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src="https://new.mmlf.ru/img/main_page/partners/rzd-partner_new_russian_%20logo.png"
-                  alt=""
-                />
-              </Grid>
-            </Hidden>
-          </Grid>
-
-          <Grid
-            justify="space-between"
-            container
-            direction="row"
-            item
-            className={`${classes.mainContainerBckgChangeSession} ${classes.partnersContainerImg3}`}
-          >
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/ACEX_LOGO_2.png"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/Tablogix.png"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/Tatre.png"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/%D0%9F%D1%80%D0%BE%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81.png"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/TLK%20Media%20.png"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/logo-tspremium.jpg"
-                alt=""
-              />
-            </Grid>
-            <Hidden xsDown>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src="https://new.mmlf.ru/img/main_page/partners/retail_new.png"
-                  alt=""
-                />
-              </Grid>
-            </Hidden>
-          </Grid>
-
-          <Grid
-            justify="space-between"
-            container
-            direction="row"
-            item
-            className={`${classes.mainContainerBckgChangeSession} ${classes.partnersContainerImg3}`}
-          >
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/Promvest.png"
-                alt=""
-              />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/tnews_3.jpg"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/CCIFR.png"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/Arendator-ru.png"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/%D0%93%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9.png"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/%D0%AD%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82.png"
-                alt=""
-              />
-            </Grid>
-            <Hidden xsDown>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src="https://new.mmlf.ru/img/main_page/partners/new/rus_school.png"
-                  alt=""
-                />
-              </Grid>
-            </Hidden>
-          </Grid>
-
-          <Grid
-            justify="space-between"
-            container
-            direction="row"
-            item
-            className={`${classes.mainContainerBckgChangeSession} ${classes.partnersContainerImg3}`}
-          >
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0.png"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/SiT.png"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/top_personal.jpg"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/gblobal-digital-01.png"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/All_events.png"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/Afisha.png"
-                alt=""
-              />
-            </Grid>
-            <Hidden xsDown>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src="https://new.mmlf.ru/img/main_page/partners/Expomap.jpg"
-                  alt=""
-                />
-              </Grid>
-            </Hidden>
-          </Grid>
-
-          <Grid
-            justify="space-between"
-            container
-            direction="row"
-            item
-            className={`${classes.mainContainerBckgChangeSession} ${classes.partnersContainerImg3}`}
-          >
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/Timepad.png"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/%D0%A2%D0%93%20%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%20%D0%9B%D0%BE%D0%B3%D0%B8%D1%81%D1%82.JPG"
-                alt=""
-              />
-            </Grid>
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src="https://new.mmlf.ru/img/main_page/partners/new/freeved.jpg"
-                alt=""
-              />
-            </Grid>
-            <Hidden only={['lg', 'xl', 'md', 'sm']}>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src="https://new.mmlf.ru/img/main_page/partners/rzd-partner_new_russian_%20logo.png"
-                  alt=""
-                />
-              </Grid>
-            </Hidden>
-            <Hidden only={['lg', 'xl', 'md', 'sm']}>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src="https://new.mmlf.ru/img/main_page/partners/retail_new.png"
-                  alt=""
-                />
-              </Grid>
-            </Hidden>
-
-            <Hidden only={['lg', 'xl', 'md', 'sm']}>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src="   https://new.mmlf.ru/img/main_page/partners/new/rus_school.png"
-                  alt=""
-                />
-              </Grid>
-            </Hidden>
-
-            <Hidden only={['lg', 'xl', 'md', 'sm']}>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src="https://new.mmlf.ru/img/main_page/partners/Expomap.jpg"
-                  alt=""
-                />
-              </Grid>
-            </Hidden>
-            <Hidden xsDown>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src=""
-                  alt=""
-                />
-              </Grid>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src=""
-                  alt=""
-                />
-              </Grid>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src=""
-                  alt=""
-                />
-              </Grid>
-              <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-                <img
-                  className={`${classes.imgFluid}`}
-                  src=""
-                  alt=""
-                />
-              </Grid>
-            </Hidden>
-            {/* <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img
-                className={`${classes.imgFluid}`}
-                src=""
-                alt=""
-              />
-            </Grid> */}
 
           </Grid>
 

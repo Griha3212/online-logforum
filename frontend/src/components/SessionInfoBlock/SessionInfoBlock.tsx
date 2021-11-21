@@ -9,6 +9,7 @@ import Box from '@material-ui/core/Box';
 import Rating from '@material-ui/lab/Rating';
 import useStyles from './style';
 import noAvatar from '../../img/speakersImg/noAvatar.svg';
+import netImage from '../../img/net.svg';
 import { apiUserTakeAPartInRafflePrizes, apiUserUpdateContactedSpeakers, apiVoteForSpeaker } from '../../api/user';
 import { capitalizeFirstLetter } from '../../utils/helpers/capitalizeFirstLetter.helper';
 import check from '../../img/check.svg';
@@ -275,7 +276,10 @@ const SessionInfoBlock = (props: any) => {
       {showSecondBlock() ? (
         <Grid item container justify="space-between" className={classes.innerBlack}>
 
-          <Grid container item className={classes.speakerInfoBlock} sm={7} xl={6} lg={8} xs={12}>
+          <Grid container item className={classes.speakerInfoBlock} sm={7} xl={8} lg={8} xs={12}>
+            <div className={classes.net}>
+              <img className={classes.netImage} src={netImage} alt="" />
+            </div>
             {currentUserData &&
               currentUserData.channelUserInfo.activeSession.isSessionForSecondDay ? null : (
                 <Grid item xl={12} lg={12} sm={12} xs={12}>
@@ -325,7 +329,7 @@ const SessionInfoBlock = (props: any) => {
 
           </Grid>
 
-          <Grid item xs={12} sm={5} md={4} lg={3} xl={6}>
+          <Grid item xs={12} sm={5} md={4} lg={3} xl={4}>
 
             <div className={classes.textCenter}>
               <Box component="fieldset" mb={1} borderColor="transparent">

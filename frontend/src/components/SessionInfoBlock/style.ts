@@ -107,6 +107,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('xl')]: {
       fontSize: '28px',
+      position: 'relative',
     },
 
   },
@@ -173,8 +174,7 @@ const useStyles = makeStyles((theme) => ({
 
   speakerFullCompanyText: {
 
-    fontFamily: 'Open Sans',
-    fontWeight: 400,
+    fontFamily: 'Proxima Nova Regular',
 
     color: 'white',
     marginTop: '5px',
@@ -205,8 +205,7 @@ const useStyles = makeStyles((theme) => ({
 
   speakerFullNameText: {
 
-    fontFamily: 'Open Sans',
-    fontWeight: 600,
+    fontFamily: 'Proxima Nova Bold',
 
     color: 'white',
     marginTop: '5px',
@@ -224,8 +223,8 @@ const useStyles = makeStyles((theme) => ({
 
     },
     [theme.breakpoints.up('xl')]: {
-      fontSize: '30px',
-      lineHeight: '41px',
+      fontSize: '21px',
+      lineHeight: '22px',
     },
 
   },
@@ -492,6 +491,23 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
 
+  net: {
+    position: 'absolute',
+    width: '53px',
+    height: '269px',
+  },
+
+  netImage: {
+    position: 'relative',
+
+    [theme.breakpoints.up('xl')]: {
+      width: '53px',
+      height: '269px',
+      top: '48px',
+      right: '53px',
+    },
+  },
+
   innerBlack: {
 
     backgroundColor: 'transparent',
@@ -518,7 +534,7 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: '30px',
     },
     [theme.breakpoints.up('xl')]: {
-      padding: '0 110px',
+      padding: '0 196px',
       paddingTop: '36px',
       paddingBottom: '93px',
     },
@@ -552,7 +568,7 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: '36px',
     },
     [theme.breakpoints.up('xl')]: {
-      padding: '0 110px',
+      padding: '0 196px',
       paddingTop: '39px',
       minHeight: '190px',
       paddingRight: '0px',
