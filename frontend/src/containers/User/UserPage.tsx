@@ -14,7 +14,7 @@ import React, {
   FC, memo, useState, useEffect, useRef,
 } from 'react';
 import {
-  useMediaQuery, Grid, Typography, Button, Hidden,
+  useMediaQuery, Grid, Typography, Hidden,
 } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 import { Redirect, useHistory } from 'react-router-dom';
@@ -26,29 +26,22 @@ import VideoPlayerMain from '../../components/VideoPlayerMain/VideoPlayerMain';
 import SessionInfoBlock from '../../components/SessionInfoBlock/SessionInfoBlock';
 import topLogforumLogo from '../../img/logforum_top_logo.svg';
 import arrowImage from '../../img/arrow.svg';
-import SpeakersSessionInfoBlock from '../../components/SpeakersSessionInfoBlock/SpeakersSessionInfoBlock';
 import {
   apiGetUser, apiUserUpdateWatchedSpeakers,
   apiGetAllChannels, apiUserChangeActiveChannel,
   apiUserUpdateWatchedSpeakersAllInSession,
 } from '../../api/user';
 import footerCCLLogo from '../../img/ccl_logo.svg';
-import vk from '../../img/socialImg/vk.svg';
-import facebook from '../../img/socialImg/facebook.svg';
-import youtube from '../../img/socialImg/youtube.svg';
-import cclFooter from '../../img/ccl_footer.svg';
 import {
   DataForUser, Vote, Channel, Speaker, DataFromSocket,
 } from '../../interfaces/allInterfaces';
 
 import sap from '../../img/partnersImg/sap.svg';
 import comitas from '../../img/partnersImg/comitas.svg';
-import smartLogistics from '../../img/partnersImg/smart_logistics.svg';
 
 import veeroute from '../../img/partnersImg/veeroute_2021.jpg';
 import atiSu from '../../img/partnersImg/ati.su.png';
 import sberlogistika from '../../img/partnersImg/sblogistica.svg';
-import cemat from '../../img/partnersImg/cematrussia.png';
 import spaceCargo from '../../img/partnersImg/space_cargo.svg';
 import firstLogistics from '../../img/partnersImg/first_logistics.png';
 import atlas from '../../img/partnersImg/atlas.png';
