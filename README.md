@@ -12,4 +12,5 @@ Local start
 Production start
 1. Clone repot to the server
 2. Make sure that frontend/backend .env files uploaded and configured.
-3. Start all project ---> docker-compose down; docker-compose -f .\docker-compose-production.yml up -d --build; 
+3. Go to uploaded project's folder ---> cd online-logforum
+4. Start all project ---> docker-compose down; docker-compose -f .\docker-compose-production.yml up -d --build; 
