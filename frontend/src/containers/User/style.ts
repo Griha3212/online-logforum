@@ -21,29 +21,29 @@ const useStyles = makeStyles((theme) => ({
       padding: '50px 0px',
       marginBottom: '0px',
       marginTop: '0px !important',
-      maxWidth: '28%',
-      flexBasis: '28%',
+      // maxWidth: '28%',
+      // flexBasis: '28%',
     },
 
     [theme.breakpoints.up('md')]: {
       textAlign: 'center',
       marginBottom: '0px',
       padding: '0px 0px',
-      maxWidth: '30%',
-      flexBasis: '30%',
+      // maxWidth: '30%',
+      // flexBasis: '30%',
       marginTop: 'auto !important',
     },
 
     [theme.breakpoints.up('lg')]: {
-      maxWidth: '30%',
-      flexBasis: '30%',
+      // maxWidth: '30%',
+      // flexBasis: '30%',
       paddingTop: '5%',
     },
 
     [theme.breakpoints.up('xl')]: {
       padding: '0px',
-      maxWidth: '30%',
-      flexBasis: '30%',
+      maxWidth: '28%',
+      flexBasis: '28%',
     },
 
   },
@@ -146,6 +146,7 @@ const useStyles = makeStyles((theme) => ({
 
     fontFamily: 'Proxima Nova Black',
     textAlign: 'left',
+    color: '#172645',
 
     [theme.breakpoints.down('xs')]: {
       fontSize: '5vw',
@@ -186,11 +187,11 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('md')]: {
-      justifyContent: 'space-between',
+      justifyContent: 'flex-start',
     },
 
     [theme.breakpoints.up('lg')]: {
-      justifyContent: 'space-between',
+      justifyContent: 'flex-start',
       // width: '80%',
     },
 

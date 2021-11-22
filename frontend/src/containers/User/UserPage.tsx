@@ -559,7 +559,7 @@ const UserPage: FC = () => {
               xs={10}
               sm={4}
               md={3}
-              xl={4}
+              xl={3}
               lg={4}
             >
 
@@ -570,7 +570,11 @@ const UserPage: FC = () => {
 
               <p className={classes.imgPartnerP}>
                 {' '}
-                <img className={`${classes.imgFluid} ${classes.imgPartner}`} src={sap} alt="" />
+                <img
+                  className={`${classes.imgFluid} ${classes.imgPartner}`}
+                  src={firstLogistics}
+                  alt=""
+                />
               </p>
 
             </Grid>
@@ -581,25 +585,29 @@ const UserPage: FC = () => {
               xs={10}
               sm={4}
               md={3}
-              xl={4}
+              xl={3}
               lg={4}
             >
 
               <p className={classes.partnerText}>
-                Эксклюзивный
+                Стратегический
                 партнер
               </p>
 
               <p className={classes.imgPartnerP}>
                 {' '}
-                <img className={`${classes.imgFluid} ${classes.imgPartner}`} src={comitas} alt="" />
+                <img
+                  className={`${classes.imgFluid} ${classes.imgPartner}`}
+                  src={sap}
+                  alt=""
+                />
               </p>
 
             </Grid>
           </Grid>
 
           <Grid
-            justify="space-between"
+            justify="flex-start"
             container
             direction="row"
             item
@@ -626,36 +634,6 @@ const UserPage: FC = () => {
             </Grid>
 
           </Grid>
-
-          <Grid
-            justify="space-between"
-            container
-            direction="row"
-            item
-            className={`${classes.mainContainerBckgChangeSession}`}
-          >
-
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={ntls} alt="" />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={axelot} alt="" />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={infoscan} alt="" />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={psi} alt="" />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={korusKonsalting} alt="" />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={medPoint} alt="" />
-            </Grid>
-
-          </Grid>
-
         </Grid>
 
       </Grid>
