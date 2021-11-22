@@ -124,7 +124,7 @@ const SessionInfoBlock = (props: any) => {
       if (!currentUserData.channelUserInfo.activeSession && currentUserData.channelUserInfo.break) {
         if (currentUserData.channelUserInfo.number === 1 &&
           !currentUserData.channelUserInfo.started) {
-          return `Перерыв... Скоро здесь начнётся: ${currentUserData.channelUserInfo.startChannelSessionDescription}`;
+          return `Перерыв... Скоро здесь начнётся экскурсия: ${currentUserData.channelUserInfo.startChannelSessionDescription}`;
         }
 
         if (currentUserData.channelUserInfo.number === 1 &&
@@ -132,14 +132,14 @@ const SessionInfoBlock = (props: any) => {
           return 'Вступительное слово Оргкомитета Форума';
         }
 
-        return `Перерыв... Скоро здесь начнётся: ${currentUserData.channelUserInfo.startChannelSessionDescription}`;
+        return `Перерыв... Скоро здесь начнётся экскурсия: ${currentUserData.channelUserInfo.startChannelSessionDescription}`;
       }
 
       if (currentUserData.channelUserInfo.activeSession && currentUserData.channelUserInfo.break) {
         if (currentUserData.channelUserInfo.activeSession.name === 'LogistOfTheYear') {
           return '19 февраля здесь будут проходить Онлайн-экскурсии на крупнейшие логистические объекты';
         }
-        return `Перерыв... Скоро здесь начнётся: ${currentUserData.channelUserInfo.activeSession.nextSessionDescription}`;
+        return `Перерыв... Скоро здесь начнётся экскурсия: ${currentUserData.channelUserInfo.activeSession.nextSessionDescription}`;
       }
 
       if (props.currentSessionDescription) {

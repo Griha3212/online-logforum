@@ -33,9 +33,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('xs')]: {
       fontSize: '15px',
       marginTop: '0px',
-      position: 'fixed',
-      left: '57%',
+      position: 'static',
       top: '150px',
+      textAlign: 'center',
     },
 
     [theme.breakpoints.up('sm')]: {

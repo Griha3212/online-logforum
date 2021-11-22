@@ -143,7 +143,7 @@ const AdminPage: FC = () => {
   };
 
   const renderSpeakersDataForAdmin = (element: Speaker) => {
-    if (!element.isModerator) {
+    if (!element.isModerator && element.lastName !== 'ВСТУПИТЕЛЬНОЕ') {
       return (
 
         <Grid key={element.id} container item xs={12} justify="center">
@@ -190,14 +190,6 @@ const AdminPage: FC = () => {
           <Typography component="h1" variant="h5">
             Страница Администратора
           </Typography>
-          <p className={classes.sessionLetter}>
-            Канал №
-            {dataForAdmin && String(dataForAdmin.channelAdminInfo.number)}
-            {' '}
-            (
-            {dataForAdmin && String(dataForAdmin.channelAdminInfo.channelLocation)}
-            )
-          </p>
 
           <p className={classes.sessionLetter} />
 
@@ -207,7 +199,7 @@ const AdminPage: FC = () => {
 
       <Grid container justify="space-around">
 
-        <Grid item lg={4} xs={6}>
+        <Grid item lg={4} xs={12}>
 
           {
             dataForAdmin && dataForAdmin.foundAllSessionsInAdminChannel.map(
@@ -243,7 +235,7 @@ const AdminPage: FC = () => {
           } */}
         </Grid>
 
-        <Grid item container justify="center" lg={4} xs={6}>
+        <Grid item container justify="center" lg={4} xs={12}>
           <div className={classes.stickyCentralMenu}>
             {/* mobile */}
             <Hidden only={['lg', 'xl', 'md']}>
@@ -265,7 +257,7 @@ const AdminPage: FC = () => {
               </Button>
             </p>
 
-            <p className={classes.textCenter}>
+            {/* <p className={classes.textCenter}>
               <Button
                 className={classes.speakerButtonBigMargin}
                 onClick={() => setBreakBetweenSessions()}
@@ -275,35 +267,7 @@ const AdminPage: FC = () => {
                 Активировать перерыв
 
               </Button>
-            </p>
-
-            {dataForAdmin && dataForAdmin.channelAdminInfo.number === 1 ? (
-              <p className={classes.textCenter}>
-                <Button
-                  className={classes.speakerButton}
-                  onClick={() => setLogistOfTheYearSession()}
-                  variant="contained"
-                  color="primary"
-                >
-                  Активировать награждение Логист Года
-
-                </Button>
-              </p>
-            ) : null}
-
-            {dataForAdmin && dataForAdmin.channelAdminInfo.number === 1 ? (
-              <p className={classes.textCenter}>
-                <Button
-                  className={classes.speakerButton}
-                  onClick={() => disableLogistOfTheYearSession()}
-                  variant="contained"
-                  color="secondary"
-                >
-                  Деактивировать награждение Логист Года
-
-                </Button>
-              </p>
-            ) : null}
+            </p> */}
           </div>
         </Grid>
         {/* pc */}

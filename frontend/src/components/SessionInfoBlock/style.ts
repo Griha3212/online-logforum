@@ -543,7 +543,7 @@ const useStyles = makeStyles((theme) => ({
 
   innerWhiteContainer: {
 
-    backgroundColor: '#F1F3F5',
+    backgroundColor: 'black',
     height: 'auto',
 
     width: '100%',

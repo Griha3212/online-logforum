@@ -192,40 +192,6 @@ export const seedMockedUsers = async () => {
     isAdmin: true,
 
   },
-
-  {
-
-    firstName: 'admin',
-    lastName: 'A',
-    company: 'CCL',
-    loginCode: 'Z2oxcI',
-    adminOfTheChannelNumber: 2,
-    isAdmin: true,
-
-  },
-
-  {
-
-    firstName: 'admin',
-    lastName: 'B',
-    company: 'CCL',
-    loginCode: '9qJf57',
-    adminOfTheChannelNumber: 3,
-    isAdmin: true,
-
-  },
-
-  {
-
-    firstName: 'admin',
-    lastName: 'C',
-    company: 'CCL',
-    loginCode: 'EiHNfv',
-    adminOfTheChannelNumber: 4,
-    isAdmin: true,
-
-  },
-
   {
 
     firstName: 'stats',
