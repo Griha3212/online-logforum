@@ -493,18 +493,32 @@ const useStyles = makeStyles((theme) => ({
 
   net: {
     position: 'absolute',
-    width: '53px',
-    height: '269px',
+
+    [theme.breakpoints.up('lg')]: {
+      width: '40px',
+      height: '203px',
+    },
+
+    [theme.breakpoints.up('xl')]: {
+      width: '53px',
+      height: '269px',
+    },
+
   },
 
   netImage: {
     position: 'relative',
+
+    [theme.breakpoints.up('lg')]: {
+      display: 'none',
+    },
 
     [theme.breakpoints.up('xl')]: {
       width: '53px',
       height: '269px',
       top: '48px',
       right: '53px',
+      display: 'block',
     },
   },
 

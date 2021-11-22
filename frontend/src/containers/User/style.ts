@@ -99,7 +99,6 @@ const useStyles = makeStyles((theme) => ({
 
       maxWidth: '45%',
       flexBasis: '45%',
-      margin: '0 auto',
       // marginBottom: '20px !important',
     },
 
@@ -107,7 +106,20 @@ const useStyles = makeStyles((theme) => ({
 
       maxWidth: '12%',
       flexBasis: '12%',
-      margin: '0 auto',
+      // marginBottom: '20px !important',
+    },
+
+    [theme.breakpoints.down('lg')]: {
+
+      maxWidth: '12%',
+      flexBasis: '12%',
+      // marginBottom: '20px !important',
+    },
+
+    [theme.breakpoints.down('xl')]: {
+
+      maxWidth: '12%',
+      flexBasis: '12%',
       // marginBottom: '20px !important',
     },
 
@@ -919,11 +931,20 @@ const useStyles = makeStyles((theme) => ({
   },
   innerContainer: {
 
-    width: '100%',
+    width: 'auto',
     position: 'relative',
     zIndex: 2,
-    maxWidth: '1520px',
     margin: '0 auto',
+
+    [theme.breakpoints.down('xl')]: {
+      marginLeft: '200px',
+      marginRight: '200px',
+    },
+
+    [theme.breakpoints.down('lg')]: {
+      width: '1200px',
+      margin: '0 auto',
+    },
 
     [theme.breakpoints.down('md')]: {
       paddingLeft: '64px',
@@ -1003,7 +1024,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('lg')]: {
-      height: '16.5vw',
+      height: '30vh',
     },
     [theme.breakpoints.up('xl')]: {
       height: '458px',

@@ -40,13 +40,14 @@ import sap from '../../img/partnersImg/sap.svg';
 import comitas from '../../img/partnersImg/comitas.svg';
 
 import veeroute from '../../img/partnersImg/veeroute_2021.jpg';
-import atiSu from '../../img/partnersImg/ati.su.png';
 import sberlogistika from '../../img/partnersImg/sblogistica.svg';
 import spaceCargo from '../../img/partnersImg/space_cargo.svg';
 import firstLogistics from '../../img/partnersImg/first_logistics.png';
-import atlas from '../../img/partnersImg/atlas.png';
 
 import ntls from '../../img/partnersImg/new_tech.png';
+import scanCode from '../../img/partnersImg/scancode.png';
+import cemat from '../../img/partnersImg/cemat.jpg';
+import cipherLab from '../../img/partnersImg/cipher_lab.jpg';
 import axelot from '../../img/partnersImg/axelot.svg';
 
 import infoscan from '../../img/partnersImg/infoscan.png';
@@ -615,22 +616,16 @@ const UserPage: FC = () => {
           >
 
             <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={veeroute} alt="" />
+              <img className={`${classes.imgFluid}`} src={ntls} alt="" />
             </Grid>
             <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={atiSu} alt="" />
+              <img className={`${classes.imgFluid}`} src={scanCode} alt="" />
             </Grid>
             <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={sberlogistika} alt="" />
+              <img className={`${classes.imgFluid}`} src={cemat} alt="" />
             </Grid>
             <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={atlas} alt="" />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={spaceCargo} alt="" />
-            </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
-              <img className={`${classes.imgFluid}`} src={firstLogistics} alt="" />
+              <img className={`${classes.imgFluid}`} src={cipherLab} alt="" />
             </Grid>
 
           </Grid>
