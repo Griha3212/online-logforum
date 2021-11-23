@@ -401,7 +401,7 @@ const UserPage: FC = () => {
 
           <Grid item className={classes.myAuto} lg={3} xl={3} sm={4}>
             <img
-              onClick={() => { window.open('https://mmlf.ru/', '_blank'); }}
+              onClick={() => { window.open('https://sklad.logforum.ru/', '_blank'); }}
               className={classes.logforumTopLogoImg}
               src={topLogforumLogo}
               alt=""
@@ -409,7 +409,7 @@ const UserPage: FC = () => {
           </Grid>
 
           <Grid item className={classes.myAuto} xl={3} lg={3} sm={4}>
-            <Typography className={classes.conferenceTopText} align="center">Экскурсия</Typography>
+            <Typography className={classes.conferenceTopText} align="center">Экскурсии</Typography>
           </Grid>
 
         </Grid>
@@ -427,14 +427,14 @@ const UserPage: FC = () => {
           <Grid item className={classes.myAuto} xs={6}>
             <p style={{ marginBottom: '0px' }}>
               <img
-                onClick={() => { window.open('https://mmlf.ru/', '_blank'); }}
+                onClick={() => { window.open('https://sklad.logforum.ru/', '_blank'); }}
                 className={classes.logforumTopLogoImg}
                 src={topLogforumLogo}
                 alt=""
               />
 
             </p>
-            <p style={{ marginTop: '5px' }}><Typography className={classes.conferenceTopText} align="center">Экскурсия</Typography></p>
+            <p style={{ marginTop: '5px' }}><Typography className={classes.conferenceTopText} align="center">Экскурсии</Typography></p>
 
           </Grid>
         </Grid>
@@ -642,7 +642,7 @@ const UserPage: FC = () => {
 
             <Grid xs={12} md={3} xl={3} lg={3} className={`${classes.myAuto} ${classes.footerLogoContainer}`} item>
               <img
-                onClick={() => { window.open('https://mmlf.ru/', '_blank'); }}
+                onClick={() => { window.open('https://sklad.logforum.ru/', '_blank'); }}
                 className={`${classes.cursorPointer} ${classes.logforumFooterLogo}`}
                 src={topLogforumLogo}
                 alt=""

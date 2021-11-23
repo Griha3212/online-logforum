@@ -1068,10 +1068,10 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('lg')]: {
-      height: '183px',
+      height: '92px',
     },
     [theme.breakpoints.up('xl')]: {
-      height: '183px',
+      height: '92px',
     },
 
   },
