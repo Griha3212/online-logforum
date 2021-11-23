@@ -509,7 +509,7 @@ const useStyles = makeStyles((theme) => ({
   netImage: {
     position: 'relative',
 
-    [theme.breakpoints.up('lg')]: {
+    [theme.breakpoints.up('xs')]: {
       display: 'none',
     },
 
@@ -524,7 +524,7 @@ const useStyles = makeStyles((theme) => ({
 
   innerBlack: {
 
-    backgroundColor: 'transparent',
+    backgroundColor: 'black',
     width: '100%',
 
     [theme.breakpoints.up('xs')]: {

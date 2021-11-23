@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up('xs')]: {
       textAlign: 'center',
-      paddingTop: '25px',
+      paddingTop: '0px',
       marginTop: '0px',
     },
 
@@ -52,6 +52,11 @@ const useStyles = makeStyles((theme) => ({
 
     display: 'flex',
 
+    [theme.breakpoints.up('xs')]: {
+      textAlign: 'center',
+      justifyContent: 'center',
+    },
+
     [theme.breakpoints.up('sm')]: {
       height: '150px',
       marginBottom: '0px',
@@ -60,6 +65,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       height: '150px',
       marginBottom: '0px',
+      justifyContent: 'normal',
     },
 
     [theme.breakpoints.up('lg')]: {
@@ -128,7 +134,6 @@ const useStyles = makeStyles((theme) => ({
   imgPartner: {
 
     [theme.breakpoints.down('xs')]: {
-      marginBottom: '73px',
       width: '75% !important',
     },
 
@@ -162,6 +167,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('xs')]: {
       fontSize: '5vw',
+      textAlign: 'center',
     },
 
     [theme.breakpoints.up('sm')]: {
@@ -188,8 +194,6 @@ const useStyles = makeStyles((theme) => ({
 
   partnersContainerImg: {
 
-    gap: '86px',
-
     [theme.breakpoints.up('xs')]: {
       justifyContent: 'center',
     },
@@ -200,6 +204,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up('md')]: {
       justifyContent: 'flex-start',
+      gap: '86px',
     },
 
     [theme.breakpoints.up('lg')]: {
@@ -213,7 +218,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up('xs')]: {
       justifyContent: 'center',
-
+      marginTop: '50px !important',
     },
 
     [theme.breakpoints.up('sm')]: {
@@ -222,13 +227,12 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('md')]: {
-      justifyContent: 'center',
-
+      justifyContent: 'flex-start',
     },
 
     [theme.breakpoints.up('lg')]: {
-      justifyContent: 'space-between',
-
+      justifyContent: 'flex-start',
+      gap: '70px',
     },
 
     [theme.breakpoints.up('xl')]: {
@@ -367,6 +371,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '10px',
     color: 'white',
     textAlign: 'left',
+
+    [theme.breakpoints.down('md')]: {
+      textAlign: 'center',
+    },
   },
 
   socialFooterImg: {
@@ -837,9 +845,9 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('xs')]: {
       padding: '0px',
-      marginTop: '0',
       textAlign: 'center',
-      marginBottom: '22px',
+      marginTop: '100px',
+      marginBottom: '20px',
     },
 
   },
@@ -856,6 +864,8 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: '6.8vw',
       marginLeft: 'auto',
       marginRight: 'auto',
+      marginTop: '0',
+      marginBottom: '0',
     },
 
     [theme.breakpoints.up('sm')]: {
@@ -874,7 +884,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up('lg')]: {
       fontSize: '3.3vw',
-      lineHeight: '79px',
+      lineHeight: '3.3vw',
       marginTop: '0px',
       marginLeft: '0px',
 
@@ -949,7 +959,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('md')]: {
       paddingLeft: '64px',
       paddingRight: '64px',
-
+      width: 'auto',
     },
 
     [theme.breakpoints.down('sm')]: {
@@ -994,7 +1004,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     width: '120px',
     height: '110px',
-    top: '400px',
+    top: '398px',
     left: '201px',
   },
 
@@ -1002,6 +1012,14 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     width: '120px',
     height: '110px',
+
+    [theme.breakpoints.up('xs')]: {
+      display: 'none',
+    },
+
+    [theme.breakpoints.up('xl')]: {
+      display: 'block',
+    },
   },
 
   blackBckgContainerShort: {
