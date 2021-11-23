@@ -45,7 +45,7 @@ export const seedMockedSpeakers = async () => {
       linkToPresentation: `${process.env.BACKEND_URL}/presentations/Plenar/Marinus.pdf`,
       topicName: 'Автоматизированный РЦ компании Leroy Merlin',
       innerSystemName: 'Alushin_Plenar',
-      statusInCompany: 'Директор по логистический операциям',
+      statusInCompany: 'Директор по логистическим операциям',
       session: foundSessions.filter((session: any) => session.name === 'Plenar'),
 
     },
