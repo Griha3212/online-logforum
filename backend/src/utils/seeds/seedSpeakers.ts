@@ -28,7 +28,7 @@ export const seedMockedSpeakers = async () => {
 
       firstName: 'Ырысбек',
       lastName: 'ТАШБАЕВ',
-      linkToImg: `${process.env.BACKEND_URL}/img/speakers/per_Tashbayev.png`,
+      linkToImg: `${process.env.BACKEND_URL}/img/speakers/Alushin.png`,
       innerSystemName: '',
       isModerator: true,
       session: foundSessions.filter((session: any) => session.name === 'Plenar'),
@@ -40,7 +40,7 @@ export const seedMockedSpeakers = async () => {
       firstName: 'Игорь',
 
       company: 'Leroy Merlin',
-      linkToImg: `${process.env.BACKEND_URL}/img/speakers/per_Marinus.png`,
+      linkToImg: `${process.env.BACKEND_URL}/img/speakers/Alushin.png`,
       linkToZoom: '',
       linkToPresentation: `${process.env.BACKEND_URL}/presentations/Plenar/Marinus.pdf`,
       topicName: 'Автоматизированный РЦ компании Leroy Merlin',
@@ -57,7 +57,7 @@ export const seedMockedSpeakers = async () => {
       firstName: 'Никита',
       statusInCompany: 'Руководитель складской логистики e-commerce',
       company: 'Decathlon',
-      linkToImg: `${process.env.BACKEND_URL}/img/speakers/Shulga.png`,
+      linkToImg: `${process.env.BACKEND_URL}/img/speakers/Tolochko.png`,
 
       linkToZoom: '',
       linkToPresentation: `${process.env.BACKEND_URL}/presentations/Plenar/Shulga.pdf`,
@@ -74,7 +74,7 @@ export const seedMockedSpeakers = async () => {
       firstName: 'Юрий',
 
       company: 'Ralf Ringer',
-      linkToImg: `${process.env.BACKEND_URL}/img/speakers/Dementeva.png`,
+      linkToImg: `${process.env.BACKEND_URL}/img/speakers/Vorobev.png`,
       linkToZoom: '',
       linkToPresentation: `${process.env.BACKEND_URL}/presentations/Plenar/Dementeva.pdf`,
       topicName: 'Автоматизированный складской комплекс компании Ralf Ringer',
@@ -91,7 +91,7 @@ export const seedMockedSpeakers = async () => {
       firstName: 'Михаил',
       statusInCompany: 'Директор по логистике',
       company: 'IEK Group',
-      linkToImg: `${process.env.BACKEND_URL}/img/speakers/per_Demin.png`,
+      linkToImg: `${process.env.BACKEND_URL}/img/speakers/Diderev.png`,
 
       linkToZoom: '',
       linkToPresentation: `${process.env.BACKEND_URL}/presentations/Plenar/Demin.pdf`,
