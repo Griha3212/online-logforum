@@ -592,6 +592,7 @@ const useStyles = makeStyles((theme) => ({
       minHeight: '190px',
       paddingRight: '0px',
       paddingBottom: '48px',
+      height: '424px',
     },
 
   },

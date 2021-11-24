@@ -388,6 +388,8 @@ const UserPage: FC = () => {
     }
   };
 
+  console.log('dataForUser :>> ', dataForUser);
+
   return (
     <>
       {/* header pc */}
@@ -484,9 +486,12 @@ const UserPage: FC = () => {
         item
         justify="center"
       >
-        <div className={classes.arrow}>
-          <img className={classes.arrowImage} src={arrowImage} alt="" />
-        </div>
+        {dataForUser && dataForUser.channelUserInfo.break ? null : (
+          <div className={classes.arrow}>
+            <img className={classes.arrowImage} src={arrowImage} alt="" />
+          </div>
+        )}
+
       </Grid>
 
       {/* first block (active speaker) info ---------------------------*/}
@@ -508,31 +513,6 @@ const UserPage: FC = () => {
       {/* block with all speakers in session---------------------------------------------------
       render if not LogistOfTheYear */}
       {renderSpeakersSessionInfoBlock()}
-
-      {/* show/hide OtherChannelsBlock-------------------------------------------------------- */}
-      {showOtherChannelsBlock(dataForUser) ? (
-        <Grid container className={classes.changeSessionMainContainer} xl>
-          <Grid ref={changeSession} item className={classes.innerContainer}>
-            <Grid xs={12} item container className={`${classes.mainContainerBckgChangeSession} ${classes.mainContainerBckgChangeSessionFirst}`}>
-              <p className={classes.speakersBlockHeader} />
-            </Grid>
-
-            <Grid
-              xs={12}
-              item
-              justify="space-between"
-              container
-              className={`${classes.mainContainerBckgChangeSession}
-             ${classes.otherSessionContainerInner}`}
-            >
-              {allChannelsInfo && dataForUser
-                && allChannelsInfo.map((element) => renderOtherSessions(element))}
-            </Grid>
-
-          </Grid>
-
-        </Grid>
-      ) : null}
 
       <Grid container className={classes.partnersContainer} justify="space-around">
 

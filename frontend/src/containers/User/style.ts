@@ -67,14 +67,13 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('lg')]: {
-      height: '100px',
+      height: '72px',
       marginBottom: '55px',
     },
 
     [theme.breakpoints.up('xl')]: {
-
-      height: '100px',
       marginBottom: '107px',
+      height: '72px',
     },
 
   },
@@ -132,25 +131,25 @@ const useStyles = makeStyles((theme) => ({
   imgPartner: {
 
     [theme.breakpoints.down('xs')]: {
-      width: '75% !important',
+      width: '55% !important',
     },
 
     [theme.breakpoints.up('sm')]: {
-      width: '70% !important',
+      width: '50% !important',
     },
 
     [theme.breakpoints.up('md')]: {
-      width: '70% !important',
+      width: '50% !important',
     },
 
     [theme.breakpoints.up('lg')]: {
       marginBottom: '0px',
-      width: '75% !important',
+      width: '55% !important',
     },
 
     [theme.breakpoints.up('xl')]: {
 
-      width: '75% !important',
+      width: '55% !important',
     },
 
   },
@@ -171,7 +170,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up('md')]: {
-      textAlign: 'center',
+      textAlign: 'left',
     },
 
     [theme.breakpoints.up('lg')]: {
@@ -201,12 +200,12 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up('md')]: {
       justifyContent: 'flex-start',
-      gap: '86px',
     },
 
     [theme.breakpoints.up('lg')]: {
       justifyContent: 'flex-start',
       // width: '80%',
+      gap: '86px',
     },
 
   },
@@ -783,6 +782,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up('lg')]: {
       padding: '0 196px',
+      gap: '20px',
     },
 
   },
@@ -903,7 +903,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Proxima Nova Regular',
     maxWidth: '915px',
 
-    [theme.breakpoints.up('xl')]: {
+    [theme.breakpoints.up('md')]: {
       fontSize: '24px',
       lineHeight: '32px',
     },
@@ -1017,6 +1017,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     width: '120px',
     height: '110px',
+    zIndex: 5,
 
     [theme.breakpoints.up('xs')]: {
       display: 'none',
