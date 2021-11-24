@@ -21,8 +21,8 @@ export const seedMockedSessions = async () => {
       letter: 'Экскурсия',
       description: 'Автоматизированный РЦ компании Leroy Merlin',
       channelForShowing: await foundChannels.filter((channel: any) => channel.number === 1),
-      nextSessionLetter: 'WMS DAY-1',
-      nextSessionDescription: 'Панельная дискуссия директоров по логистике о внедрении WMS',
+      nextSessionLetter: 'Перерыв',
+      nextSessionDescription: 'Автоматизированный складской комплекс компании Ralf Ringer',
       nextSessionName: 'WMS1',
     },
 

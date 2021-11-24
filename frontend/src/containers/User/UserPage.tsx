@@ -514,7 +514,7 @@ const UserPage: FC = () => {
         <Grid container className={classes.changeSessionMainContainer} xl>
           <Grid ref={changeSession} item className={classes.innerContainer}>
             <Grid xs={12} item container className={`${classes.mainContainerBckgChangeSession} ${classes.mainContainerBckgChangeSessionFirst}`}>
-              <p className={classes.speakersBlockHeader}>Сменить сессию</p>
+              <p className={classes.speakersBlockHeader} />
             </Grid>
 
             <Grid

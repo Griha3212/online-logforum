@@ -565,6 +565,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('xs')]: {
       padding: '0 22px',
       paddingTop: '14px',
+      height: '30vh',
     },
 
     [theme.breakpoints.up('md')]: {
@@ -572,6 +573,8 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: '17px',
       paddingRight: '0px',
       paddingBottom: '24px',
+      height: '30vh',
+
     },
 
     [theme.breakpoints.up('lg')]: {
@@ -579,8 +582,10 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: '34px',
       minHeight: '190px',
       paddingRight: '0px',
-      paddingBottom: '36px',
+      paddingBottom: '0',
+      height: 'auto',
     },
+
     [theme.breakpoints.up('xl')]: {
       padding: '0 196px',
       paddingTop: '39px',

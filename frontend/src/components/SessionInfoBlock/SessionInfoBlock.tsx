@@ -230,20 +230,6 @@ const SessionInfoBlock = (props: any) => {
                     {renderSessionLetter()}
                   </p>
                 </Grid>
-                {showOtherChannelsBlock(currentUserData) ? (
-                  <Grid item xs className={classes.myAuto}>
-                    <p
-                      className={renderSessionLetter().length > 10
-                        ? classes.changeSessionPLong : classes.changeSessionP}
-                      onClick={() => props.executeScrollToChangeSessionBlock()}
-                    >
-                      <img className={classes.reloadImg} src={reload} alt="" />
-                      {' '}
-                      Сменить сессию
-                    </p>
-                  </Grid>
-                ) : null}
-
               </Grid>
               <p className={currentUserData && currentUserData.channelUserInfo.activeSession &&
                 currentUserData.channelUserInfo.activeSession.partnerOfTheSessionImgSrc ?

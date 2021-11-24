@@ -257,7 +257,7 @@ const AdminPage: FC = () => {
               </Button>
             </p>
 
-            {/* <p className={classes.textCenter}>
+            <p className={classes.textCenter}>
               <Button
                 className={classes.speakerButtonBigMargin}
                 onClick={() => setBreakBetweenSessions()}
@@ -267,7 +267,7 @@ const AdminPage: FC = () => {
                 Активировать перерыв
 
               </Button>
-            </p> */}
+            </p>
           </div>
         </Grid>
         {/* pc */}
