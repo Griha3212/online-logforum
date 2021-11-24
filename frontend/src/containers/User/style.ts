@@ -128,6 +128,22 @@ const useStyles = makeStyles((theme) => ({
 
   },
 
+  biggerImg: {
+    [theme.breakpoints.down('lg')]: {
+
+      maxWidth: '15%',
+      flexBasis: '12%',
+      // marginBottom: '20px !important',
+    },
+
+    [theme.breakpoints.down('xl')]: {
+
+      maxWidth: '15%',
+      flexBasis: '12%',
+      // marginBottom: '20px !important',
+    },
+  },
+
   imgPartner: {
 
     [theme.breakpoints.down('xs')]: {
@@ -229,6 +245,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('lg')]: {
       justifyContent: 'flex-start',
       gap: '70px',
+      marginTop: '15px !important',
     },
 
     [theme.breakpoints.up('xl')]: {
@@ -782,6 +799,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up('lg')]: {
       padding: '0 196px',
+      marginTop: '0px',
       gap: '20px',
     },
 

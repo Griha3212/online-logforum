@@ -46,8 +46,8 @@ import firstLogistics from '../../img/partnersImg/first_logistics.png';
 
 import ntls from '../../img/partnersImg/new_tech.png';
 import scanCode from '../../img/partnersImg/scancode.png';
-import cemat from '../../img/partnersImg/cemat.jpg';
-import cipherLab from '../../img/partnersImg/cipher_lab.jpg';
+import cemat from '../../img/partnersImg/cemat.png';
+import cipherLab from '../../img/partnersImg/cipher_lab.png';
 import axelot from '../../img/partnersImg/axelot.svg';
 
 import infoscan from '../../img/partnersImg/infoscan.png';
@@ -595,7 +595,7 @@ const UserPage: FC = () => {
             className={`${classes.mainContainerBckgChangeSession} ${classes.partnersContainerImg2}`}
           >
 
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
+            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom} ${classes.biggerImg}`} item xs>
               <img className={`${classes.imgFluid}`} src={ntls} alt="" />
             </Grid>
             <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
@@ -604,7 +604,7 @@ const UserPage: FC = () => {
             <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
               <img className={`${classes.imgFluid}`} src={cemat} alt="" />
             </Grid>
-            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom}`} item xs>
+            <Grid className={`${classes.myAuto} ${classes.partnerImgContainerBottom} ${classes.biggerImg}`} item xs>
               <img className={`${classes.imgFluid}`} src={cipherLab} alt="" />
             </Grid>
 
